@@ -1,11 +1,11 @@
 function checkprime(number){
-    let count=0;
+    let factors=0;
     for(let i=0;i<number;i++){
-        if(number%i==1){
-            count++
+        if(number%i==0){
+            factors++
         }
     }
-    if(count==3){
+    if(factors==2){
         console.log("prime")
     }else{
         console.log("not prime")
